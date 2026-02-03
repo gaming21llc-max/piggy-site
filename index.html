@@ -1,9 +1,13 @@
+<div class="piggy-container">
+  <img src="piggy.jpg" alt="Piggy Token" class="piggy-animate">
+</div>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>PIGGY | Meme Reserve Currency</title>
+
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
 
@@ -83,6 +87,25 @@ background:#111;
 font-size:14px;
 opacity:0.7;
 }
+/* Pig animation */
+.piggy-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.piggy-animate {
+  width: 220px;
+  animation: floatPiggy 3s ease-in-out infinite;
+  filter: drop-shadow(0 0 20px gold);
+}
+
+/* Floating animation */
+@keyframes floatPiggy {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
 </style>
 </head>
 
@@ -107,11 +130,48 @@ opacity:0.7;
 <p>PIGGY is a community-driven meme token inspired by the timeless piggy bank. Built on Solana with zero taxes and focused on long-term holding.</p>
 </div>
 </section>
+<!-- Tokenomics Section -->
+<section id="tokenomics" style="padding: 80px 20px; background:#0b0b0b; color:white; text-align:center;">
+  <h2 style="font-size:42px; margin-bottom:20px;">🐷 Tokenomics</h2>
+  <p style="max-width:700px; margin:auto; font-size:18px; color:#ccc;">
+    Simple, transparent, and built for long-term growth.
+  </p>
 
-<section>
-<div class="box">
-<h2 class="gold">Tokenomics</h2>
-<section>
+  <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:25px; margin-top:40px;">
+
+    <div style="background:#141414; padding:25px; border-radius:12px; width:250px;">
+      <h3>💰 Total Supply</h3>
+      <p>1,000,000,000 PIGGY</p>
+    </div>
+
+    <div style="background:#141414; padding:25px; border-radius:12px; width:250px;">
+      <h3>🔥 Liquidity</h3>
+      <p>80%</p>
+    </div>
+
+    <div style="background:#141414; padding:25px; border-radius:12px; width:250px;">
+      <h3>🎁 Rewards & Cashback</h3>
+      <p>10%</p>
+    </div>
+
+    <div style="background:#141414; padding:25px; border-radius:12px; width:250px;">
+      <h3>📢 Marketing</h3>
+      <p>5%</p>
+    </div>
+
+    <div style="background:#141414; padding:25px; border-radius:12px; width:250px;">
+      <h3>🛠 Development</h3>
+      <p>5%</p>
+    </div>
+
+    <div style="background:#141414; padding:25px; border-radius:12px; width:250px;">
+      <h3>🧾 Taxes</h3>
+      <p>0% Buy / 0% Sell</p>
+    </div>
+
+  </div>
+</section>
+
 
 <section id="cashback">
   <div class="box">
@@ -138,87 +198,60 @@ opacity:0.7;
     <a href="https://axiom.trade/t/5DnkLudup3fGywmjV5yeda9UfoTPZjuA9wUUE8wApump?chain=sol" class="btn">Buy PIGGY Now</a>
     <a href="#tokenomics" class="btn">Learn Tokenomics</a>
   </div>
-</section>
-
-<div class="box">
-<h2 class="gold">Cashback Utility</h2>
-
-<p>
-Spend PIGGY at supported merchants and receive cashback directly to your wallet.
-PIGGY transforms spending into saving.
-</p>
-
-<div class="grid">
-
-<div class="card">
-<h3>Pay With PIGGY</h3>
-<p>Use PIGGY for real purchases.</p>
-</div>
-
-<div class="card">
-<h3>Earn Cashback</h3>
-<p>Receive 2%–5% back in PIGGY.</p>
-</div>
-
-<div class="card">
-<h3>Save & Stack</h3>
-<p>Grow your Piggy Bank automatically.</p>
-</div>
-
-</div>
-
-<a href="#" class="btn">Coming Soon</a>
-
-</div>
-</section>
-
-<div class="grid">
-<div class="card">
-<h3>Supply</h3>
-<p>1,000,000,000 PIGGY</p>
-</div>
-
-<div class="card">
-<h3>Taxes</h3>
-<p>0% Buy / 0% Sell</p>
-</div>
-
-<div class="card">
-<h3>Liquidity</h3>
-<p>Locked</p>
-</div>
-
-<div class="card">
-<h3>Launch</h3>
-<p>Fair Launch</p>
-</div>
-</div>
-
-</div>
-</section>
 
 <section>
-<div class="box">
-<h2 class="gold">Roadmap</h2>
+<!-- Roadmap Section -->
+<section id="roadmap" style="padding: 80px 20px; background:#111; color:white; text-align:center;">
+  <h2 style="font-size:42px; margin-bottom:20px;">🗺️ Roadmap</h2>
+  <p style="max-width:700px; margin:auto; font-size:18px; color:#ccc;">
+    Our path to building the ultimate meme + rewards ecosystem.
+  </p>
 
-<div class="grid">
-<div class="card">
-<h3>Phase 1</h3>
-<p>Website<br>Socials<br>Whitelist<br>Token Launch</p>
-</div>
+  <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:25px; margin-top:40px;">
 
-<div class="card">
-<h3>Phase 2</h3>
-<p>DEX Listings<br>Marketing<br>Coin Trackers</p>
-</div>
+    <div style="background:#1a1a1a; padding:25px; border-radius:12px; width:260px;">
+  <h3>🚀 Phase 1</h3>
+  <p style="color:#4CAF50;">✅ Launch Token</p>
+  <p style="color:#4CAF50;">✅ Website & Socials</p>
+  <p style="color:#4CAF50;">✅ Telegram Security</p>
+  <p style="color:#4CAF50;">✅ Branding & Memes</p>
+    </div>
 
-<div class="card">
-<h3>Phase 3</h3>
-<p>Staking<br>NFTs<br>Partnerships</p>
-</div>
-</div>
+    <div style="background:#1a1a1a; padding:25px; border-radius:12px; width:260px;">
+      <h3>🐷 Phase 2</h3>
+      <p>Community Growth</p>
+      <p>Meme Contests</p>
+      <p>Giveaways</p>
+      <p>Influencer Outreach</p>
+    </div>
 
-</div>
+    <div style="background:#1a1a1a; padding:25px; border-radius:12px; width:260px;">
+      <h3>🎁 Phase 3</h3>
+      <p>Cashback Rewards</p>
+      <p>NFT Redemption</p>
+      <p>Product Rewards</p>
+      <p>Dashboard</p>
+    </div>
+
+    <div style="background:#1a1a1a; padding:25px; border-radius:12px; width:260px;">
+      <h3>🤝 Phase 4</h3>
+      <p>Partnerships</p>
+      <p>Listings & Trackers</p>
+      <p>Utility Expansion</p>
+      <p>Cross Promotions</p>
+    </div>
+
+    <div style="background:#1a1a1a; padding:25px; border-radius:12px; width:260px;">
+      <h3>🌟 Phase 5</h3>
+      <p>Community Voting</p>
+      <p>Ecosystem Growth</p>
+      <p>Future Utilities</p>
+      <p>Long-Term Expansion</p>
+    </div>
+
+  </div>
+</section>
+
 </section>
 
 <section>
