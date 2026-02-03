@@ -110,6 +110,15 @@ opacity:0.7;
 </head>
 
 <body>
+<script>
+function copyCA() {
+  const caText = document.getElementById("caText").innerText;
+
+  navigator.clipboard.writeText(caText).then(() => {
+    alert("Contract Address Copied! 🐷💰");
+  });
+}
+</script>
 
 <header>
   
@@ -167,6 +176,123 @@ opacity:0.7;
     <div style="background:#141414; padding:25px; border-radius:12px; width:250px;">
       <h3>🧾 Taxes</h3>
       <p>0% Buy / 0% Sell</p>
+    </div>
+
+  </div>
+</section>
+<!-- How to Buy Section -->
+<section id="howtobuy" style="padding: 80px 20px; background:#0b0b0b; color:white; text-align:center !important; margin:auto;">
+
+  <h2 style="font-size:42px; margin-bottom:20px;">🛒 How to Buy $PIGGY</h2>
+  <p style="max-width:760px; margin:0 auto; text-align:center; font-size:18px; color:#ccc;">
+    New to Solana? No worries — follow these quick steps and you’ll be holding $PIGGY in minutes.
+  </p>
+
+  <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:25px; margin-top:40px;">
+
+    <div style="background:#141414; padding:25px; border-radius:12px; width:270px; text-align:center;">
+      <h3>1️⃣ Get a Wallet</h3>
+      <p>Download <b>Phantom</b> or <b>Solflare</b> and create a Solana wallet.</p>
+    </div>
+
+    <div style="background:#141414; padding:25px; border-radius:12px; width:270px; text-align:center;">
+      <h3>2️⃣ Add SOL</h3>
+      <p>Buy SOL on an exchange and send it to your wallet address.</p>
+    </div>
+
+    <div style="background:#141414; padding:25px; border-radius:12px; width:270px; text-align:center;">
+      <h3>3️⃣ Swap for $PIGGY</h3>
+      <p>Open a Solana swap and paste the contract address to find $PIGGY.</p>
+    </div>
+
+    <div style="background:#141414; padding:25px; border-radius:12px; width:270px; text-align:center;">
+      <h3>4️⃣ Confirm</h3>
+      <p>Choose how much SOL to swap → confirm → $PIGGY arrives in your wallet.</p>
+    </div>
+
+  </div>
+
+  <div style="margin-top:35px; background:#111; border:1px solid #222; padding:18px; border-radius:12px; max-width:900px; margin-left:auto; margin-right:auto;">
+    <p style="margin:0; font-size:16px; color:#bbb;">✅ Official Contract Address (CA)</p>
+    <p id="caText" style="margin:10px 0 0; font-size:16px; word-break:break-all; text-align:center;">
+  <b>5DnkLudup3fGywmjV5yeda9UfoTPZjuA9wUUE8wApump</b>
+</p>
+
+<button onclick="copyCA()" 
+style="margin-top:12px; padding:10px 18px; border:none; border-radius:8px;
+background:gold; color:black; font-weight:bold; cursor:pointer;">
+📋 Copy Contract Address
+</button>
+
+  </div>
+
+  <p style="margin-top:20px; color:#999; font-size:14px;">
+    ⚠️ Always verify the CA before swapping. Beware of fake tokens.
+  </p>
+</section>
+<!-- FAQ Section -->
+<section id="faq" style="padding: 80px 20px; background:#111; color:white; text-align:center;">
+  <h2 style="font-size:42px; margin-bottom:20px;">❓ FAQ</h2>
+  <p style="max-width:760px; margin:0 auto; text-align:center; font-size:18px; color:#ccc;">
+    Quick answers to the most common questions about $PIGGY.
+  </p>
+
+  <div style="max-width:900px; margin:40px auto 0; text-align:left;">
+
+    <div style="background:#1a1a1a; padding:22px; border-radius:12px; margin-bottom:16px;">
+      <h3 style="margin:0 0 8px;">What is $PIGGY?</h3>
+      <p style="margin:0; color:#ccc;">
+        $PIGGY is a Solana meme coin with a rewards vision — designed to evolve into a community-driven cashback + redemption ecosystem.
+      </p>
+    </div>
+
+    <div style="background:#1a1a1a; padding:22px; border-radius:12px; margin-bottom:16px;">
+      <h3 style="margin:0 0 8px;">Is the cashback live right now?</h3>
+      <p style="margin:0; color:#ccc;">
+        Cashback is rolling out in phases. We’re building the community first (Phase 2), then rolling out rewards + redemption features in Phase 3.
+      </p>
+    </div>
+
+    <div style="background:#1a1a1a; padding:22px; border-radius:12px; margin-bottom:16px;">
+      <h3 style="margin:0 0 8px;">What can I redeem with $PIGGY?</h3>
+      <p style="margin:0; color:#ccc;">
+        The plan is to redeem $PIGGY for NFTs and other products as the rewards system is implemented. Community feedback will help shape what comes first.
+      </p>
+    </div>
+
+    <div style="background:#1a1a1a; padding:22px; border-radius:12px; margin-bottom:16px;">
+      <h3 style="margin:0 0 8px;">What chain is $PIGGY on?</h3>
+      <p style="margin:0; color:#ccc;">
+        $PIGGY is on Solana — fast, low fees, and built for community-driven memecoins.
+      </p>
+    </div>
+
+    <div style="background:#1a1a1a; padding:22px; border-radius:12px; margin-bottom:16px;">
+      <h3 style="margin:0 0 8px;">What’s the official contract address (CA)?</h3>
+      <p style="margin:0; color:#ccc; word-break:break-all;">
+        5DnkLudup3fGywmjV5yeda9UfoTPZjuA9wUUE8wApump
+      </p>
+    </div>
+
+    <div style="background:#1a1a1a; padding:22px; border-radius:12px; margin-bottom:16px;">
+      <h3 style="margin:0 0 8px;">How do I buy $PIGGY?</h3>
+      <p style="margin:0; color:#ccc;">
+        Check the “How to Buy” section above — you’ll need a Solana wallet, some SOL, then swap using the official CA.
+      </p>
+    </div>
+
+    <div style="background:#1a1a1a; padding:22px; border-radius:12px; margin-bottom:16px;">
+      <h3 style="margin:0 0 8px;">Is $PIGGY community-driven?</h3>
+      <p style="margin:0; color:#ccc;">
+        Yes — the community helps shape direction through feedback and upcoming polls. We’re building momentum together.
+      </p>
+    </div>
+
+    <div style="background:#1a1a1a; padding:22px; border-radius:12px; margin-bottom:16px;">
+      <h3 style="margin:0 0 8px;">Will admins/mods DM me first?</h3>
+      <p style="margin:0; color:#ccc;">
+        Never. Admins/mods will not DM first, and nobody will ever ask for your private keys. Always verify official links and the CA.
+      </p>
     </div>
 
   </div>
